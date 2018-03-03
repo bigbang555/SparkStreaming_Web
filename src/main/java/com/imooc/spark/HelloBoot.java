@@ -1,4 +1,4 @@
-package com.imooc.spark.web;
+package com.imooc.spark;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -20,6 +20,10 @@ public class HelloBoot {
     @RequestMapping(value = "/first", method = RequestMethod.GET)
     public ModelAndView firstDemo() {
         return new ModelAndView("test");
+    }
+    @RequestMapping(value = "/course_clickcount",method = RequestMethod.GET)
+    public ModelAndView courseClickCountStat(){
+        return new ModelAndView("demo");
     }
 
 }
